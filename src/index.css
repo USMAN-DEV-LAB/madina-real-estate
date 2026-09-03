@@ -1,18 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
   scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: #ffffff;
+  color: #1a202c;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Playfair Display', serif;
+/* Global clean default font for all text elements */
+p, span, a, button, input, select, textarea, label, div, li, ul, table, small, strong, b {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* High-end luxury Playfair Display ONLY for major section titles */
+h1, h2, h3, .font-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Card titles, subheadings, badges, and prices use clean Plus Jakarta Sans */
+h4, h5, h6, .card-title, .font-sans, .font-body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 /* hides scrollbar for horizontal listing scroller, keeps it scrollable */
@@ -33,7 +50,7 @@ h1, h2, h3, h4 {
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(24px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -46,5 +63,5 @@ h1, h2, h3, h4 {
 }
 
 .animate-fade-in-up {
-  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }

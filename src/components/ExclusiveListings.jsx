@@ -224,7 +224,8 @@ export default function ExclusiveListings({ filters, setFilters }) {
           {filteredListings.map((p) => (
             <div
               key={p.id}
-              className="group bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between"
+              onClick={() => setSelectedProperty(p)}
+              className="group bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between cursor-pointer"
             >
               <div>
                 {/* Image Container with Badges */}
@@ -319,7 +320,10 @@ export default function ExclusiveListings({ filters, setFilters }) {
               <div className="p-4 pt-0 grid grid-cols-2 gap-2">
                 <button
                   type="button"
-                  onClick={() => setSelectedProperty(p)}
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    setSelectedProperty(p)
+                  }}
                   className="w-full bg-navy hover:bg-navy-dark text-white text-xs font-semibold py-2 rounded-lg transition-all duration-200 active:scale-95 text-center cursor-pointer"
                 >
                   Details
@@ -328,6 +332,7 @@ export default function ExclusiveListings({ filters, setFilters }) {
                   href={`https://wa.me/923000000000?text=${encodeURIComponent(`Assalam o Alaikum, I am interested in property [${p.id}]: ${p.title} located at ${p.location} (${p.price}). Please share more details.`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
                   className="w-full bg-brandgreen hover:bg-brandgreen-dark text-white text-xs font-semibold py-2 rounded-lg transition-all duration-200 active:scale-95 flex items-center justify-center gap-1 shadow-sm"
                 >
                   <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">

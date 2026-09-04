@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react'
 import { PROPERTIES_DATA, AREAS, PROPERTY_TYPES, RENT_PRICE_RANGES } from '../data/properties'
+import PropertyGallery from './PropertyGallery'
 
 export default function PropertiesForRent({ onNavigateHome, onSelectProperty }) {
   // Filters state specifically for Rent page
@@ -457,20 +458,14 @@ export default function PropertiesForRent({ onNavigateHome, onSelectProperty }) 
               ✕
             </button>
 
-            <div className="relative h-64 sm:h-72 w-full">
-              <img
-                src={selectedProperty.img}
-                alt={selectedProperty.title}
-                className="w-full h-full object-cover"
+            {/* Daraz-Style Media Gallery (YouTube Video Embed 1st priority + Image Strip) */}
+            <div className="p-4 sm:p-5 pb-0">
+              <PropertyGallery
+                videoUrl={selectedProperty.videoUrl}
+                images={selectedProperty.images || [selectedProperty.img]}
+                title={selectedProperty.title}
+                badge={selectedProperty.badge || 'FOR RENT'}
               />
-              <div className="absolute top-4 left-4 flex gap-2">
-                <span className="bg-navy text-white text-xs font-bold px-3 py-1 rounded-md shadow">
-                  FOR RENT
-                </span>
-                <span className="bg-gold text-navy-dark text-xs font-bold px-3 py-1 rounded-md shadow">
-                  {selectedProperty.price}
-                </span>
-              </div>
             </div>
 
             <div className="p-6">

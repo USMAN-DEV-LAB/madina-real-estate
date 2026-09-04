@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react'
 import { PROPERTIES_DATA, AREAS, PROPERTY_TYPES, PRICE_RANGES } from '../data/properties'
+import PropertyGallery from './PropertyGallery'
 
 export default function ExclusiveListings({ filters, setFilters }) {
   const [selectedProperty, setSelectedProperty] = useState(null)
@@ -373,21 +374,14 @@ export default function ExclusiveListings({ filters, setFilters }) {
               ✕
             </button>
 
-            {/* Modal Image */}
-            <div className="relative h-64 sm:h-72 w-full">
-              <img
-                src={selectedProperty.img}
-                alt={selectedProperty.title}
-                className="w-full h-full object-cover"
+            {/* Daraz-Style Media Gallery (YouTube Video Embed 1st priority + Image Strip) */}
+            <div className="p-4 sm:p-5 pb-0">
+              <PropertyGallery
+                videoUrl={selectedProperty.videoUrl}
+                images={selectedProperty.images || [selectedProperty.img]}
+                title={selectedProperty.title}
+                badge={selectedProperty.purpose === 'Buy' ? 'FOR SALE' : 'FOR RENT'}
               />
-              <div className="absolute top-4 left-4 flex gap-2">
-                <span className="bg-navy text-white text-xs font-bold px-3 py-1 rounded-md shadow">
-                  {selectedProperty.purpose === 'Buy' ? 'For Sale' : 'For Rent'}
-                </span>
-                <span className="bg-gold text-navy-dark text-xs font-bold px-3 py-1 rounded-md shadow">
-                  {selectedProperty.price}
-                </span>
-              </div>
             </div>
 
             {/* Modal Content */}

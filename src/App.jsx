@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import PopularAreas from './components/PopularAreas'
 import FeaturedProjects from './components/FeaturedProjects'
 import ExclusiveListings from './components/ExclusiveListings'
+import Testimonials from './components/Testimonials'
 import PropertiesForSale from './components/PropertiesForSale'
 import PropertiesForRent from './components/PropertiesForRent'
 import Team from './components/Team'
@@ -90,6 +91,8 @@ export default function App() {
               filters={filters}
               setFilters={setFilters}
             />
+            {/* Testimonials / Client Reviews Section */}
+            <Testimonials />
             <Team />
             <Services />
             <LocationLinks onSelectArea={handleSelectArea} />

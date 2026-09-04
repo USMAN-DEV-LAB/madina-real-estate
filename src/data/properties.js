@@ -54,7 +54,14 @@ export const PROPERTIES_DATA = [
     tags: ['Garden West Main', 'West Open', 'Standby Generator', 'Lift Available'],
     badge: 'HOT',
     badgeColor: 'bg-red-600',
+    videoUrl: 'https://www.youtube.com/embed/ZOY90rxUFAg',
     img: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80'
+    ],
     agent: {
       name: 'Muhammad Hassan',
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80',
@@ -82,7 +89,14 @@ export const PROPERTIES_DATA = [
     tags: ['Garden West Houses', 'Ground Floor', 'Car Porch', 'Sweet Water'],
     badge: 'HOT',
     badgeColor: 'bg-gold text-navy-dark',
+    videoUrl: 'https://www.youtube.com/embed/z7giJBLfEGc',
     img: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80'
+    ],
     agent: {
       name: 'Muhammad Adeel',
       avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80',
@@ -110,7 +124,14 @@ export const PROPERTIES_DATA = [
     tags: ['Garden East Main Road', 'Garden East Apartments', 'Private Terrace', 'Luxury Living'],
     badge: 'HOT',
     badgeColor: 'bg-navy-dark',
+    videoUrl: 'https://www.youtube.com/embed/kmbVGAHqL7U',
     img: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80'
+    ],
     agent: {
       name: 'Hassan Raza',
       avatar: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=120&q=80',
@@ -138,7 +159,14 @@ export const PROPERTIES_DATA = [
     tags: ['Garden East Houses', 'Britto Road (Garden East)', 'Brand New Renovation', 'Double Storey'],
     badge: 'HOT',
     badgeColor: 'bg-purple-700',
+    videoUrl: 'https://www.youtube.com/embed/xxq8mNy-cM4',
     img: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80'
+    ],
     agent: {
       name: 'Usman Tariq',
       avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=120&q=80',
@@ -166,7 +194,13 @@ export const PROPERTIES_DATA = [
     tags: ['Garden West Apartments', 'Nishtar Road', 'Ready to Move', 'Gas & Water Available'],
     badge: 'HOT',
     badgeColor: 'bg-emerald-600',
+    videoUrl: 'https://www.youtube.com/embed/ZOY90rxUFAg',
     img: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80'
+    ],
     agent: {
       name: 'Ayesha Malik',
       avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80',
@@ -194,7 +228,12 @@ export const PROPERTIES_DATA = [
     tags: ['Shops in Garden West', 'Commercial Area', 'Corner', 'Mezzanine Included'],
     badge: 'HOT',
     badgeColor: 'bg-blue-600',
+    videoUrl: 'https://www.youtube.com/embed/z7giJBLfEGc',
     img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80'
+    ],
     agent: {
       name: 'Bilal Ahmed',
       avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=120&q=80',
@@ -222,7 +261,13 @@ export const PROPERTIES_DATA = [
     tags: ['Britto Road (Garden East)', 'Corner Flat', 'Ready to Move', 'Lift Available'],
     badge: 'HOT',
     badgeColor: 'bg-gold text-navy-dark',
+    videoUrl: 'https://www.youtube.com/embed/kmbVGAHqL7U',
     img: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80'
+    ],
     agent: {
       name: 'Muhammad Hassan',
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80',
@@ -253,7 +298,13 @@ export const PROPERTIES_DATA = [
     tags: ['Britto Road (Garden East)', 'Family Building', 'West Open', 'Standby Generator'],
     badge: 'HOT',
     badgeColor: 'bg-red-600',
+    videoUrl: 'https://www.youtube.com/embed/ZOY90rxUFAg',
     img: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80'
+    ],
     agent: {
       name: 'Shamshad Ali',
       avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80',
@@ -282,7 +333,13 @@ export const PROPERTIES_DATA = [
     tags: ['Garden West Houses', 'Upper Portion', 'Private Terrace', 'Separate Meter'],
     badge: 'HOT',
     badgeColor: 'bg-gold text-navy-dark',
+    videoUrl: 'https://www.youtube.com/embed/z7giJBLfEGc',
     img: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80'
+    ],
     agent: {
       name: 'Muhammad Hassan',
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80',
@@ -311,7 +368,13 @@ export const PROPERTIES_DATA = [
     tags: ['Garden West Houses', 'Ground Floor', 'Car Porch', 'Sweet Water'],
     badge: 'HOT',
     badgeColor: 'bg-emerald-600',
+    videoUrl: 'https://www.youtube.com/embed/xxq8mNy-cM4',
     img: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80'
+    ],
     agent: {
       name: 'Muhammad Adeel',
       avatar: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=120&q=80',
@@ -340,7 +403,13 @@ export const PROPERTIES_DATA = [
     tags: ['Garden East Main Road', 'Furnished Flat', 'Standby Generator', 'Luxury Living'],
     badge: 'FEATURED',
     badgeColor: 'bg-purple-700',
+    videoUrl: 'https://www.youtube.com/embed/kmbVGAHqL7U',
     img: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=80'
+    ],
     agent: {
       name: 'Ayesha Malik',
       avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80',
@@ -369,7 +438,12 @@ export const PROPERTIES_DATA = [
     tags: ['Shops in Garden West', 'Commercial Office', 'Main Road Facing', 'High Footfall'],
     badge: 'COMMERCIAL',
     badgeColor: 'bg-blue-600',
+    videoUrl: 'https://www.youtube.com/embed/ZOY90rxUFAg',
     img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80'
+    ],
     agent: {
       name: 'Bilal Ahmed',
       avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=120&q=80',
@@ -398,7 +472,13 @@ export const PROPERTIES_DATA = [
     tags: ['Garden East Apartments', 'Private Terrace', 'Penthouse', 'Luxury Living'],
     badge: 'EXCLUSIVE',
     badgeColor: 'bg-navy-dark',
+    videoUrl: 'https://www.youtube.com/embed/xxq8mNy-cM4',
     img: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80'
+    ],
     agent: {
       name: 'Hassan Raza',
       avatar: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=120&q=80',
@@ -427,7 +507,12 @@ export const PROPERTIES_DATA = [
     tags: ['Shops in Garden West', 'Nishtar Road', 'High Footfall', 'Commercial Area'],
     badge: 'RENT',
     badgeColor: 'bg-brandgreen',
+    videoUrl: 'https://www.youtube.com/embed/z7giJBLfEGc',
     img: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80'
+    ],
     agent: {
       name: 'Bilal Ahmed',
       avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=120&q=80',
@@ -456,7 +541,12 @@ export const PROPERTIES_DATA = [
     tags: ['Garden West Apartments', 'Studio Flat', 'Affordable Rent', 'Sweet Water'],
     badge: 'RENT',
     badgeColor: 'bg-gray-800',
+    videoUrl: 'https://www.youtube.com/embed/ZOY90rxUFAg',
     img: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80'
+    ],
     agent: {
       name: 'Usman Tariq',
       avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=120&q=80',

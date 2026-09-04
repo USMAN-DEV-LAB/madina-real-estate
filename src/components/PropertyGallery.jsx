@@ -103,7 +103,7 @@ export default function PropertyGallery({
       {/* 1. Main Display Screen (Top 1st Priority Video Embed or Active Image) */}
       <div className="relative w-full aspect-video bg-black rounded-xl overflow-hidden shadow-inner group">
         {isVideo ? (
-          /* YouTube Video Player Embed */
+          /* 100% Clean YouTube Video Player Embed (No overlapping badges or buttons) */
           <div className="w-full h-full relative">
             <iframe
               src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`}
@@ -112,18 +112,6 @@ export default function PropertyGallery({
               allowFullScreen
               className="w-full h-full border-0"
             />
-            {/* Top Indicator Tag */}
-            <div className="absolute top-3 left-3 pointer-events-none z-10 flex items-center gap-2">
-              <span className="bg-red-600/90 backdrop-blur-sm text-white text-[11px] font-extrabold px-2.5 py-1 rounded-md shadow flex items-center gap-1.5 uppercase tracking-wider">
-                <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
-                Video Tour
-              </span>
-              {badge && (
-                <span className="bg-gold text-navy-dark text-[11px] font-black px-2.5 py-1 rounded-md shadow tracking-wider uppercase">
-                  {badge}
-                </span>
-              )}
-            </div>
           </div>
         ) : (
           /* High-Res Property Image View */
@@ -150,31 +138,31 @@ export default function PropertyGallery({
                 </span>
               )}
             </div>
+
+            {/* Left / Right Arrow Navigation (Active on Image View) */}
+            <button
+              type="button"
+              onClick={handlePrev}
+              aria-label="Previous Media"
+              className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/60 hover:bg-black/90 text-white flex items-center justify-center backdrop-blur-sm opacity-80 hover:opacity-100 transition-all cursor-pointer shadow-lg z-20 hover:scale-110 active:scale-95"
+            >
+              <svg className="w-5 h-5 -ml-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+
+            <button
+              type="button"
+              onClick={handleNext}
+              aria-label="Next Media"
+              className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/60 hover:bg-black/90 text-white flex items-center justify-center backdrop-blur-sm opacity-80 hover:opacity-100 transition-all cursor-pointer shadow-lg z-20 hover:scale-110 active:scale-95"
+            >
+              <svg className="w-5 h-5 -mr-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
           </div>
         )}
-
-        {/* Left / Right Arrow Navigation Over Main Screen */}
-        <button
-          type="button"
-          onClick={handlePrev}
-          aria-label="Previous Media"
-          className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/60 hover:bg-black/90 text-white flex items-center justify-center backdrop-blur-sm opacity-80 hover:opacity-100 transition-all cursor-pointer shadow-lg z-20 hover:scale-110 active:scale-95"
-        >
-          <svg className="w-5 h-5 -ml-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-
-        <button
-          type="button"
-          onClick={handleNext}
-          aria-label="Next Media"
-          className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/60 hover:bg-black/90 text-white flex items-center justify-center backdrop-blur-sm opacity-80 hover:opacity-100 transition-all cursor-pointer shadow-lg z-20 hover:scale-110 active:scale-95"
-        >
-          <svg className="w-5 h-5 -mr-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
       </div>
 
       {/* 2. Daraz-Style Combined Thumbnail Strip */}
